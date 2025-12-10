@@ -1,0 +1,177 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    padding: 20px 40px;
+    position: sticky;
+    height: 70px;
+    z-index: 999;
+    top: 0;
+    align-items: center;
+    background-color: black;
+
+}
+
+.icon {
+    flex: 1;
+}
+
+.navlink {
+    flex: 2;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    color: #545454;
+}
+
+.navlink p:hover {
+    color: white;
+    background-color: rgb(233, 147, 19);
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+.navlink p {
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.shop {
+    flex: 1;
+    text-align: end;
+    color: #545454;
+}
+
+.shop i{
+    transition: 0.3s;
+}
+
+.shop i:hover {
+    color:rgb(233, 147, 19);
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+.shop i:active {
+    transform: scale(100%);
+}
+
+.area {
+    min-height: 1000vh;
+    padding: 20px;
+    /* background-image: linear-gradient(to bottom, black, rgb(91, 90, 90)); */
+    background-color: rgb(8, 8, 8);
+}
+
+.salam {
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 50px;
+}
+
+.salam p {
+    font-size: 300px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 0;
+    animation: typingEffect 10s steps(30, end) infinite; 
+}
+
+@keyframes typingEffect {
+    0% {width: 0;}
+    20% {width: 100%;}
+    60% {width: 100%;}
+    80% {width: 0;}
+    100% {width: 0;}
+}
+
+.gambar {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex: 2;
+    gap: 40px;
+}
+
+.gambar img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    animation: fade 10s infinite;
+    position: relative;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    70% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+.diri {
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.diri img {
+    width: 500px;
+
+}
+.salam1 {
+    margin-top: 30px;
+    flex: 2;
+    display: flex;
+    padding: 20px 40px;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.salam1 p{
+    background-color: rgb(233, 147, 19);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.profil {
+    text-align: center;
+    font-size: large;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    padding: 10px 100px;
+}
+
+.profil p{
+    display: inline-block;
+    padding: 30px 50px;
+    background: rgba(87, 82, 82, 0.302);
+    /*transparantipis*/backdrop-filter: blur(10%);
+    /*efekkaca*/border: 2px solid rgba(172, 129, 56, 0.594);
+    color: rgb(233, 147, 19);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
